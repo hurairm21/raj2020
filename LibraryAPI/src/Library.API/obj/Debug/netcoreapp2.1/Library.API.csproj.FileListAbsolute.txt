@@ -1,0 +1,12 @@
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\bin\Debug\netcoreapp2.1\Library.API.deps.json
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\bin\Debug\netcoreapp2.1\Library.API.runtimeconfig.json
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\bin\Debug\netcoreapp2.1\Library.API.runtimeconfig.dev.json
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\bin\Debug\netcoreapp2.1\Library.API.dll
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\bin\Debug\netcoreapp2.1\Library.API.pdb
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\obj\Debug\netcoreapp2.1\Library.API.csproj.CoreCompileInputs.cache
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\obj\Debug\netcoreapp2.1\Library.API.AssemblyInfoInputs.cache
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\obj\Debug\netcoreapp2.1\Library.API.AssemblyInfo.cs
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\obj\Debug\netcoreapp2.1\Library.API.dll
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\obj\Debug\netcoreapp2.1\Library.API.pdb
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\bin\Debug\netcoreapp2.1\nlog.config
+C:\Personal\Learning\Dot Net CORE\LibraryAPI\Library\src\Library.API\obj\Debug\netcoreapp2.1\Library.API.csprojAssemblyReference.cache

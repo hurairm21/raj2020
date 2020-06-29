@@ -1,0 +1,27 @@
+2020-04-27 01:23:12.6072|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:6058/api/authors/76053df4-6687-4353-8937-b45556748abe/books/09af5a52-9421-44e8-a2bb-a6b9ccbc8239 application/json 0
+2020-04-27 01:23:12.6258|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LibraryContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-04-27 01:23:12.6258|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2020-04-27 01:23:12.6460|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory');
+2020-04-27 01:23:12.9147|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (257ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2020-04-27 01:23:12.9271|INFO|Microsoft.EntityFrameworkCore.Migrations|No migrations were applied. The database is already up to date.
+2020-04-27 01:23:12.9353|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method Library.API.Controllers.BooksController.DeleteBookForAuthor (Library.API) with arguments (76053df4-6687-4353-8937-b45556748abe, 09af5a52-9421-44e8-a2bb-a6b9ccbc8239) - ModelState is Valid
+2020-04-27 01:23:14.1295|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__authorId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Authors] AS [a]
+        WHERE [a].[Id] = @__authorId_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2020-04-27 01:23:14.1400|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__authorId_0='?', @__bookId_1='?'], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Description], [b].[Title]
+FROM [Books] AS [b]
+WHERE ([b].[AuthorId] = @__authorId_0) AND ([b].[Id] = @__bookId_1)
+2020-04-27 01:23:14.1400|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2020-04-27 01:23:14.1564|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action Library.API.Controllers.BooksController.DeleteBookForAuthor (Library.API) in 1539.963ms
+2020-04-27 01:23:14.1564|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1582.2788ms 404 text/plain; charset=utf-8
